@@ -1,0 +1,150 @@
+.apu {
+  width: 100%;
+  .apuContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    .apuTitle {
+      .apuText {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #000;
+      }
+    }
+
+    .apuHeader {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      align-items: center;
+      .apuPath {
+        font-size: 15px;
+
+        .apuPathOne {
+          color: #999;
+          margin-right: 10px;
+        }
+
+        .apuPathTwo {
+          color: #000;
+          margin-right: 10px;
+        }
+        .apuPathThree {
+          color: red;
+        }
+      }
+    }
+
+    .apuTabel {
+      display: flex;
+      margin-top: 40px;
+      .apuTabelContainer {
+        flex: 2;
+        padding: 10px;
+        gap: 20px;
+        .apuTabelSearch {
+          display: flex;
+          margin: 10px 0px;
+          align-items: center;
+          gap: 20px;
+          .apuInputText {
+            outline: blue;
+            background-color: white;
+            padding: 7px;
+            width: 100%;
+            flex: 9;
+            border: 2px solid skyblue;
+            border-radius: 12px;
+          }
+          .apuInputIconText {
+            flex: 2;
+            background-color: rgb(26, 57, 214);
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            padding: 7px;
+            color: white;
+            border-radius: 12px;
+            cursor: pointer;
+          }
+          .apuAddUser{
+            flex: 1;
+            background-color: white;
+            justify-content: space-evenly;
+            padding: 6px;
+            color: rgb(26, 57, 214);
+            border-radius: 12px;
+            border: 2px solid blue;
+            display: flex;
+            cursor: pointer;
+          }
+        }
+        .apuTabelLabels {
+            background-color: white;
+            padding: 20px 10px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            border-bottom: 1px solid #ddd;
+          display: flex;
+          .apuUsernameLabel {
+            flex: 3;
+          }
+          .apuEmailLabel {
+            flex: 3;
+          }
+
+          .apuNoOfBookingsLabel {
+            flex: 2;
+          }
+          .apuDeleteUserLabel {
+            flex: 2;
+          }
+          .apuRecentOrdersLabel {
+            flex: 2;
+          }
+        }
+        .apuTabelContent {
+          display: flex;
+          background-color: white;
+          padding: 20px 10px;
+          .apuUsername {
+            flex: 3;
+            
+          }
+          .apuEmail {
+            flex: 3;
+            
+          }
+          .apuNoOfBookings {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+
+          }
+          .apuRecentOrders {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #999;
+            width: fit-content;
+            color: blue;
+            cursor: pointer;
+            
+          }
+          .apuDeleteUser {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 13px;
+          }
+        }
+      }
+      .apuSendNotification {
+        flex: 1;
+      }
+    }
+  }
+}

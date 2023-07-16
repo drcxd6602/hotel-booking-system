@@ -1,0 +1,21 @@
+.error{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .errorSorry{
+        display: block;
+        font-size: 40px;
+        letter-spacing: 5px;
+        line-height: 50px;
+    }
+
+    .errorName{
+        font-size: 26px;
+        color: #ea0b0b;
+        display: block;
+    }
+}

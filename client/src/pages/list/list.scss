@@ -1,0 +1,101 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  .listWrapper {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+
+    .listSearch {
+      flex: 1;
+      background-color: #febb02;
+      padding: 10px;
+      position: sticky;
+      top: 10px;
+      border-radius: 10px;
+      height: max-content;
+
+      @media screen and (max-width: 600px) {
+      position: static;
+      width: 350px;
+      align-self: center;
+    }
+
+      .lsItem {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+        position: relative;
+
+        .destInput {
+          height: 30px;
+          border: none;
+          padding: 5px;
+        }
+
+        .destLabel {
+          font-size: 12px;
+        }
+
+        .dateFieldInput {
+          height: 30px;
+          padding: 5px;
+          background-color: white;
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+        }
+        .dateOfStay {
+          position: absolute;
+          top: 50px;
+          z-index: 10;
+        }
+
+        .optionsWrapper {
+          padding: 5px;
+          label{
+            font-size: 16px;
+            
+          }
+          .lsOption {
+            margin: 10px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: gray;
+            font-size: 12px;
+            .lsOptionInput {
+              width: 50px;
+            }
+          }
+        }
+      }
+      .liBtn{
+        padding: 10px;
+        border: none;
+        color: white;
+        background-color:#0071c2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 500;
+      }
+    }
+
+    .listResult {
+      margin-left: 10px;
+      flex: 3;
+    }
+  }
+}

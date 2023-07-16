@@ -1,0 +1,323 @@
+.aph {
+  width: 100%;
+  position: relative;
+  
+  .aphContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    &.aphContainerOpenModal{
+        filter: blur(3px);
+    }
+    
+    .aphTitle {
+      .aphText {
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #000;
+      }
+    }
+
+    .aphHeader {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+      align-items: center;
+      .aphPath {
+        font-size: 15px;
+
+        .aphPathOne {
+          color: #999;
+          margin-right: 10px;
+        }
+
+        .aphPathTwo {
+          color: #000;
+          margin-right: 10px;
+        }
+        .aphPathThree {
+          color: red;
+        }
+      }
+    }
+
+    .aphTabel {
+      display: flex;
+      margin-top: 40px;
+
+      .aphFilters {
+        flex: 2;
+        padding: 10px;
+        gap: 20px;
+
+        .aphFiltersTitle {
+          display: block;
+          font-size: 30px;
+          font-weight: 600;
+          padding-top: 10px;
+        }
+
+        .aphFiltersContainer {
+          background-color: white;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin-top: 10px;
+          padding: 10px;
+          .aphFlocation {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0px;
+            input {
+              margin-left: 15px;
+              outline: none;
+              border: 2px solid skyblue;
+              border-radius: 5px;
+            }
+          }
+
+          .aphTypes {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+
+            .aphTypeItem {
+              display: flex;
+              justify-content: space-between;
+              width: 100px;
+            }
+          }
+        }
+        .aphMinRating,
+        .aphMinPricem,
+        .aphMinRooms {
+          padding: 20px 0px;
+        }
+
+        .aphMinRatingsLabel,
+        .aphMinPriceLabel,
+        .aphMinRoomsLabel {
+          display: block;
+        }
+      }
+      .aphTabelContainer {
+        flex: 10;
+        padding: 10px;
+        gap: 20px;
+        .aphTabelSearch {
+          display: flex;
+          margin: 10px 0px;
+          align-items: center;
+          gap: 20px;
+          .aphInputText {
+            outline: blue;
+            background-color: white;
+            padding: 7px;
+            width: 100%;
+            flex: 9;
+            border: 2px solid skyblue;
+            border-radius: 12px;
+          }
+          .aphInputIconText {
+            flex: 2;
+            background-color: #003580 ;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            padding: 7px;
+            color: white;
+            border-radius: 12px;
+            cursor: pointer;
+          }
+          .aphAddUser {
+            flex: 1;
+            background-color: white;
+            justify-content: space-evenly;
+            padding: 6px;
+            color: #003580;
+            border-radius: 12px;
+            border: 2px solid #003580;
+            display: flex;
+            cursor: pointer;
+          }
+        }
+        .aphTabelLabels {
+          background-color: white;
+          padding: 20px 10px;
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+          border-bottom: 1px solid #ddd;
+          display: flex;
+          
+          .aphHotelNameL {
+            flex: 3;
+          }
+
+          .aphHotelLocationL {
+            flex: 2;
+          }
+          .aphHotelTypeL {
+            flex: 1;
+          }
+          .aphHotelRatingL {
+            flex: 1;
+          }
+          .aphHotelRoomsL {
+            flex: 1;
+          }
+          .aphChepestPriceL {
+            flex: 1;
+          }
+          .aphEditHotelL {
+            flex: 1;
+          }
+          .aphDeleteHotelL {
+            flex: 1;
+          }
+        }
+        .aphTabelContent {
+          display: flex;
+          background-color: white;
+          padding: 20px 10px;
+          
+          .aphHotelName {
+            flex: 3;
+          }
+
+          .aphHotelLocation {
+            flex: 2;
+          }
+          .aphHotelType {
+            flex: 1;
+          }
+          .aphHotelRating {
+            flex: 1;
+          }
+          .aphHotelRooms {
+            flex: 1;
+          }
+          .aphChepestPrice {
+            flex: 1;
+          }
+
+          .aphEditHotel {
+            flex: 1;
+            cursor: pointer;
+            color: rgb(68, 68, 152);
+          }
+          .aphDeleteHotel {
+            flex: 1;
+            cursor: pointer;
+            color: rgb(204, 16, 16);
+          }
+        }
+      }
+    }
+  }
+
+  .aphAddHotelModal {
+    padding: 20px;
+    background-color: #003580;
+    max-width: 600px;
+    box-shadow: 0px 0px 5px 0px #ddd;
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    .aphMtitleMain {
+      display: flex;
+      font-size: 28px;
+      font-weight: 500;
+      color: white;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+    .aphAddHotelModalContainer {
+      background-color: white;
+      border-radius: 12px;
+
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+      padding: 20px;
+
+      .aphMItem {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .aphMItemI {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        padding: 5px;
+        margin-left: 20px;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+
+
+      .aphMItemIt {
+        outline: none;
+        border: none;
+        border: 1px solid #ddd;
+        padding: 5px;
+        margin-left: 20px;
+        width: 100%;
+        flex: 1;
+        resize: none;
+        width: 80%;
+      }
+
+      .g2 {
+        display: flex;
+        .aphMtype {
+          flex: 1;
+        }
+      }
+      .aphBtns{
+        display: flex;
+        gap:30px;
+        justify-content: center;
+      }
+      .aphBtn{
+        width: 150px;
+        align-self: center;
+        padding: 5px 10px;
+        border-radius: 12px;
+        background-color: #003580;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+
+      .aphMtype{
+        outline: none;
+        margin-right: 20px;
+
+        .aphMtypeLs{
+            outline: none;
+            padding: 2px 10px;
+            border: 1px solid #003580;
+            border-radius: 5px;
+
+        }
+      }
+    }
+  }
+}

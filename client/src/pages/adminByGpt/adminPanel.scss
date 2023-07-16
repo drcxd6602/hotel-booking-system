@@ -1,0 +1,25 @@
+.admin{
+  display: flex;
+ 
+
+
+  .adminContainer{
+
+     background-color: #003580;
+     width: 100% ;
+     display: flex;
+     padding-top: 40px;
+
+     .adminContent{
+      background-color: #eee;
+      width: 100%;
+      border-top-left-radius: 10px;
+      padding: 10px;
+
+     }
+    
+
+    
+
+  }
+}

@@ -1,0 +1,38 @@
+.propertyList{
+    width: 95%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .item{
+        overflow: hidden;
+        cursor: pointer;
+        flex: 1;
+        img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .title{
+            h1{
+                font-size: 18px;
+                margin-bottom: 5px;
+                text-transform: capitalize;
+                @media screen and (max-width : 600px) {
+                    font-size: 15px;
+                }
+
+            }
+            h2{
+                font-size: 13px;
+                font-weight: 100;
+
+                @media screen and (max-width : 600px) {
+                    font-size: 12px;
+                }
+
+            }
+        }
+    }
+}
