@@ -1,0 +1,96 @@
+.homeContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    @media screen and (max-width:800px) {
+        margin-top: 150px;
+    }
+
+    .title{
+        width: 1140px ;
+        overflow: hidden;
+        font-size: 24px;
+
+        @media screen and (max-width:1140px) {
+            width: 95%;
+        }
+    }
+
+    .loginModal{
+    position: absolute;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 300;
+    height: 350px;
+    width: 375px;
+    background-color: white;
+    box-shadow: 0px 0px 15px 0px #666;
+
+
+    .lmTitle{
+        padding-top: 25px;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-align: center;
+        display: block;
+        color: #003950;
+    }
+
+    .loginModalContainer{
+        margin: 25px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+
+        
+        .lmItem{
+            display: flex;
+            justify-content: space-between;
+            .lmInput, .lmLogin{
+                outline: none;
+                border: none;
+                padding: 15px;
+                width: 100%;
+                background-color: #ddd;
+                font-size: 16px;
+            }
+
+            .lmLogin{
+                background-color: #003580;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        .lmToggleLogin{
+            font-size: 12px;
+            color: #bbb;
+            text-align: center;
+            display: block;
+
+            span{
+                color: #003580;
+            }
+        }
+
+        .lmCloseICon{
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            size: 20px;
+            cursor: pointer;
+
+        }
+    }
+  }
+
+  &.showModal{
+    filter: blur(2px);
+  }
+}
